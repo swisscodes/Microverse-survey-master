@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="assets/survey.css"/>
+</head>
+<body>
+    <section id="main">
+        <header class="col1">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        
+        <form id="survey-form" class="col2">
+            <label for="name" id="name-label">Name: <br><input type="text" name="name" id="name" required placeholder="Please enter your name"></label> <br>
+            <label for="email" id="email-label">Email: <br><input type="email" name="name" id="email" required placeholder="Please enter your email"></label> <br>
+            <label for="number" id="number-label">Number: <br><input type="number" name="name" id="number" min=1 max=10 placeholder="Please enter a number"></label> <br>
+            <label for="dropdown">Which option best describes your current role? <br>
+                <select id="dropdown">
+                    <option value="" disabled selected hidden>Current role</option>
+                    <option value="student">Student</option>
+                    <option value="fulltime-job">Full time Job</option>
+                    <option value="fulltime-learner">Full time Learner</option>
+                    <option value="not say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <br>
+            <label id="radio" for="radio-grp">Would you recommend freeCodeCamp to a friend? <br>
+                <label for="def"><input type="radio" name="reccommend" checked value="definatelty"> Definately</label> <br>
+                <label for="maybe"><input type="radio" name="reccommend" value="maybe"> Maybe</label> <br>
+                <label for="not-sure"><input type="radio" name="reccommend" value="not sure"> Not sure</label> <br>
+            </label> <br>
+            <label for="checked-box">
+                <label><input type="checkbox" name="" value="front-end"> Front-end Projects</label> <br>
+                <label><input type="checkbox" name="" value="back-end"> Back-end Projects</label> <br>
+                <label><input type="checkbox" name="" value="data-vis"> Data Visualization</label> <br>
+                <label><input type="checkbox" name="" value="challenges"> Challenges</label> <br>
+                <label><input type="checkbox" name="" value="open-src-cmt"> Open Source Community</label> <br>
+                <label><input type="checkbox" name="" value="gitter-help-rooms"> Gitter help rooms</label> <br>
+                <label><input type="checkbox" name="" value="videos"> Videos</label> <br>
+                <label><input type="checkbox" name="" value="city-meetups"> City Meetups</label> <br>
+                <label><input type="checkbox" name="" value="wiki"> Wiki</label> <br>
+                <label><input type="checkbox" name="" value="forum"> Forum</label> <br>
+                <label><input type="checkbox" name="" value="add-course"> Additional Courses</label> <br>
+            </label> <br>
+            <label class="text-area-label"><span>Any comments or suggestions?</span> <br><textarea></textarea></label> <br>
+            <button id="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
